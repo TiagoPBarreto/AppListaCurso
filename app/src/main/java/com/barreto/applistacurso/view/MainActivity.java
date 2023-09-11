@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         pessoas = new Pessoa();
 
 
-        controller.buscar(pessoas);
+        controller.buscarDadosSharedPreferences(pessoas);
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobreNome = findViewById(R.id.editSobreNome);
         editCursoDesejado = findViewById(R.id.editCursoDesejado);

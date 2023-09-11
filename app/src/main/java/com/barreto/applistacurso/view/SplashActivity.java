@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.barreto.applistacurso.R;
+import com.barreto.applistacurso.database.ListVipDB;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        ListVipDB db = new ListVipDB(SplashActivity.this);
         cumutarTelaSplash();
     }
 
